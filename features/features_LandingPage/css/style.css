@@ -1,0 +1,123 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.projects {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1.7fr 1.7fr 1.7fr 1fr 0.2fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    align-items: stretch;
+    grid-template-areas:
+      "nav-logo nav-center nav-right"
+      "descripcion-left descripcion-left descripcion-right"
+      "card-1 card-2 card-3"
+      "contacta contacta contacta"
+      "datos1 datos2 datos3"
+      "footer footer footer";
+  }
+  
+  .nav-logo { grid-area: nav-logo;
+
+    background-color: #FEFFFF;
+    padding-top: 6%;
+    
+ }
+  .nav-center { grid-area: nav-center; 
+    background-color:#FEFFFF;
+    padding-top: 6%;
+}
+  .nav-right { grid-area: nav-right;
+
+    background-color: #FEFFFF;
+    padding-top: 6%;
+    
+     }
+  
+  .descripcion-right { grid-area: descripcion-right;
+    background-color:#EDE0C9;
+
+}
+  
+  .descripcion-left { grid-area: descripcion-left;
+    background-color:#EDE0C9;
+}
+  
+  .card-1 { grid-area: card-1;
+    background-color:#D3B98D;
+
+}
+  
+  .card-2 { grid-area: card-2;
+    background-color:#D3B98D; }
+  
+  .card-3 { grid-area: card-3;
+    background-color:#D3B98D; }
+  
+  .datos1 { grid-area: datos1;
+    background-color:#FEFFFF;
+ }
+  
+  .datos2 { grid-area: datos2; 
+    background-color:#FEFFFF;
+}
+  
+  .datos3 { grid-area: datos3;
+    background-color:#FEFFFF;
+}
+  
+  .footer { grid-area: footer; 
+    background-color:#EDE0C9;
+}
+  
+  
+  
+  .contacta {  display: grid;
+    grid-template-columns: 0.6fr 1.8fr 0.6fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". formulario .";
+    grid-area: contacta;
+    background-color:#EDE0C9;
+  }
+  
+  .formulario { grid-area: formulario; }
+  
+  
+  
+  .image-logo{
+    width: 15%;
+  }
+  .image-trenzadora{
+    width: 40%;
+  }
+  .button{
+    background-color: #C29A56;
+  }
+  .inside-button{
+    text-decoration: none;
+    color:black;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+    li{
+        list-style: none;
+    }
+    .list-form{
+        background-color: #ebd8b7;
+    }
+
+   .inline{
+    display: inline;
+    padding-right: 10%;
+    font-size: 30px;
+   } 
+   .cards{
+    background-color:#FEFFFF;
+   }

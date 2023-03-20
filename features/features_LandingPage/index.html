@@ -9,32 +9,44 @@
     <script src="javascript/script.js"></script>
   </head>
   <body>
-    <header>
-      <img
-        src="media/img/WEB-Imagotipo-trenzatress-ocre.jpg"
-        alt="Logo Landing Page"
-      />
-      <nav>
-        <ul>
-          <li><a href="productos.html">Productos</a></li>
-          <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-      <section class="descripcion">
-        <h1>Cordeleria de alta calidad</h1>
-        <h3>Especializados en el trenzado para la decoración y especializada en la fabricación 
-            y distribucion de cordones para rieles extensibles de cortinas.
-        </h3>
+    <div class="projects">
+      <div class="nav-logo">
         <img
-        src="media/img/foto1bobinashome.jpg"
-        alt="bobinas home Landing Page"
-      />
-        <button><a href="">Ver Productos</a></button>
-      </section>
-      <section class="cards">
-        <div class="card1">
-          <h2>Calidad</h2>
+          class="image-logo"
+          src="media/img/WEB-Imagotipo-trenzatress-ocre.jpg"
+          alt="logo web"
+        />
+      </div>
+      <div class="nav-center"></div>
+      <div class="nav-right">
+        <ul>
+          <li class="inline">Productos</li>
+          <li class="inline">Sobre Nosotros</li>
+          <li class="inline">Contacto</li>
+        </ul>
+      </div>
+      <div class="descripcion-right">
+        <img
+          class="image-trenzadora"
+          src="media/img/foto1bobinashome.jpg"
+          alt="Trenzadora"
+        />
+      </div>
+      <div class="descripcion-left">
+        <h2>Cordeleria de alta calidad</h2>
+        <p>
+          Especializados en el trenzado para la decoración y especializada en la
+          fabricación y distribución de cordones para rieles extensibles de
+          cortinas
+        </p>
+        <button class="button">
+          <a class="inside-button" href="productos.html">Ver Productos</a>
+        </button>
+      </div>
+
+      <div class="cards">
+        <div class="card-1">
+          <h3>Calidad</h3>
           <p>
             La calidad en la fabricación y el servicio es para nosotros la mayor
             inversión y garantía de futuro. Y unos productos fabricados con
@@ -42,70 +54,94 @@
             responden al deseo de los clientes más exigentes.
           </p>
         </div>
-        <div class="card2">
-          <h2>Compromiso</h2>
+      </div>
+      <div class="cards">
+        <div class="card-2">
+          <h3>Compromiso</h3>
           <p>
             Comprometidos con dar el servicio más eficiente en tiempo de entrega
             y generar confianza a nuestros clientes en nuestros productos.
           </p>
         </div>
-        <div class="card3">
-          <h2>Valores</h2>
-          <p>La principal premisa y política por la que nos regimos en
-             Trenzatress es un servicio personalizado a las necesidades de nuestros clientes.</p>
-        </div>
-      </section>
-      <section class="contacta">
-        <form action="" method="post">
-            <h3>Contacta con nosotros</h3>
-          <ul>
-            <li>
-              <label for="name">Nombre:</label>
-              <input type="text" placeholder="Nombre:"  name="user_name" />
-            </li>
-            <li>
-              <label for="asunto"></label>
-              <input type="text" placeholder="Asunto:"  name="asunto" />
-            </li>
-            <li>
-              <label for="telefono"></label>
-              <input type="text" placeholder="Telefono:" name="telefono" />
-            </li>
-            <li>
-              <label for="mail"></label>
-              <input type="email" placeholder="Correo Electronico:" name="user_mail" />
-            </li>
-            <li>
-              <label for="mensaje"></label>
-              <textarea placeholder="Mensaje:" name="user_message"></textarea>
-            </li>
-            <li>
-              <button>Enviar</button>
-            </li>
-          </ul>
-        </form>
-      </section>
-      <section class="datos">
-        <div class="datos1">
-          <h4>Localización:</h4>
-          <p>Ctra. Callosa - Catral, 274 (Barrio San José-Lo Meca)
-            03360 Callosa de Segura, Alicante</p>
-        </div>
-        <div class="datos2">
-          <h4>Contacto</h4>
-          <p>Teléfono: +34 965310199
-            Correo: trenzatress@gmail.com
+      </div>
+      <div class="cards">
+        <div class="card-3">
+          <h3>Valores</h3>
+          <p>
+            La principal premisa y política por la que nos regimos en
+            Trenzatress es un servicio personalizado a las necesidades de
+            nuestros clientes.
           </p>
         </div>
-        <div class="datos3">
-          <h4>Redes Sociales</h4>
-          <p> Instagram: @Trenzatress
-            Facebook: TrenzaTress
-            Linkedin: TrenzaTress
-          </p>
+      </div>
+      <div class="contacta">
+        <div class="formulario">
+          <h2>Contacta con nosotros</h2>
+          <form action="form-landing-page" method="post">
+            <ul>
+              <li>
+                <label for="name"></label>
+                <input
+                  class="list-form"
+                  type="text"
+                  placeholder="Nombre:"
+                  name="user_name"
+                />
+              </li>
+              <li>
+                <label for="mail"></label>
+                <input
+                  class="list-form"
+                  type="email"
+                  placeholder="Correo electrónico:"
+                  name="user_mail"
+                />
+              </li>
+              <li>
+                <label for="telefono"></label>
+                <input
+                  class="list-form"
+                  type="telefono"
+                  placeholder="Telefono"
+                  name="user_mail"
+                />
+              </li>
+              <li>
+                <label for="msg"></label>
+                <textarea
+                  class="list-form"
+                  placeholder="Mensaje:"
+                  name="user_message"
+                ></textarea>
+              </li>
+              <button class="button">
+                <a class="inside-button" href="#">Enviar</a>
+              </button>
+            </ul>
+          </form>
         </div>
-      </section>
-      <footer>TrenzaTress SL 2023 ®</footer>
-    </header>
+      </div>
+      <div class="datos1">
+        <h3>Localización</h3>
+        <p>
+          Ctra. Callosa - Catral, 274 (Barrio San José-Lo Meca) 03360 Callosa de
+          Segura, Alicante
+        </p>
+      </div>
+      <div class="datos2">
+        <h3>Contacto</h3>
+        <p>Teléfono: +34 965310199</p>
+        <p>Correo electrónico: info@trenzatress.es</p>
+      </div>
+      <div class="datos3">
+        <h3>Redes Sociales</h3>
+        <p>Instagram: @TrenzaTress</p>
+        <p>Facebook: TrenzaTress</p>
+        <p>Linkedin: TrenzaTress</p>
+      </div>
+      <div class="footer">
+        <h3>Trenzatress SL 2023 ®</h3>
+      </div>
+    </div>
   </body>
 </html>
