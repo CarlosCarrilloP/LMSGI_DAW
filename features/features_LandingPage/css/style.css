@@ -5,7 +5,7 @@ body{
 }
 .projects {  display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.4fr 1.7fr 1.7fr 1.7fr 1fr 0.2fr;
+    grid-template-rows: 0.2fr 1fr 0.8fr 1fr 0.5fr 0.1fr;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -24,18 +24,18 @@ body{
   .nav-logo { grid-area: nav-logo;
 
     background-color: #FEFFFF;
-    padding-top: 4%;
+    padding-top: 3%;
     padding-left: 3%;
     
  }
   .nav-center { grid-area: nav-center; 
     background-color:#FEFFFF;
-    padding-top: 6%;
+    padding-top: 3%;
 }
   .nav-right { grid-area: nav-right;
 
     background-color: #FEFFFF;
-    padding-top: 6%;
+    padding-top: 3%;
     color:black;
     text-transform: uppercase;
     font-weight: bold;
@@ -55,88 +55,102 @@ body{
     background-color:#EDE0C9;
     text-align: center;
     padding-left: 7%;
-    font-size: 40px;
+    padding-top: 5%;
+    font-size: 16px;
 
 }
   
   .card-1 { grid-area: card-1;
     background-color:#D3B98D;
     text-align: center;
-    font-size: 40px;
+    font-size: 16px;
     margin: 7%;
-    padding: 2%;
-    padding-bottom: 8%;
+    margin-top: 10%;
+    padding: 7%;
+    padding-bottom: 13%;
     border-radius: 5%;
     box-shadow: 10px 2px 9px 8px rgba(0,0,0,0.44);
+    align-items: center;
 
 }
   
   .card-2 { grid-area: card-2;
     background-color:#D3B98D;
     text-align: center;
-    font-size: 40px;
+    font-size: 16px;
     margin: 7%;
-    padding: 2%;
-    padding-bottom: 17%;
+    margin-top: 10%;
+    padding: 7%;
+    padding-bottom: 20%;
     border-radius: 5%;
     box-shadow: 10px 2px 9px 8px rgba(0,0,0,0.44); }
   
   .card-3 { grid-area: card-3;
     background-color:#D3B98D;
     text-align: center;
-    font-size: 40px;
+    font-size: 16px;
     margin: 7%;
-    padding: 2%;
+    margin-top: 10%;
+    padding: 7%;
     padding-bottom: 17%;
     border-radius: 5%;
     box-shadow: 10px 2px 9px 8px rgba(0,0,0,0.44); }
   
   .datos1 { grid-area: datos1;
     background-color:#FEFFFF;
-    font-size: 30px;
+    font-size: 16px;
     text-align: center;
+    padding-top: 7%;
  }
   
   .datos2 { grid-area: datos2; 
     background-color:#FEFFFF;
-    font-size: 30px;
+    font-size: 16px;
     text-align: center;
+    padding-top: 7%;
 }
   
   .datos3 { grid-area: datos3;
     background-color:#FEFFFF;
-    font-size: 30px;
+    font-size: 16px;
     text-align: center;
-}
+    padding-top: 7%;  }
   
   .footer { grid-area: footer; 
     background-color:#EDE0C9;
-    font-size: 20px;
+    font-size: 12px;
     text-align: center;
 }
   
   
   
   .contacta {  display: grid;
-    grid-template-columns: 0.6fr 1.8fr 0.6fr;
+    grid-template-columns: 0.6fr 1fr 0.6fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      ". formulario .";
+      ". container .";
     grid-area: contacta;
     background-color:#EDE0C9;
   }
   
-  .formulario { grid-area: formulario; }
+  .container { grid-area: container;
+    
+
+  }
   
-  
+  .left{
+    margin-left: 20%;
+  }
   
   .image-logo{
     width: 15%;
   }
   .image-trenzadora{
-    width: 40%;
+    width: 45%;
+    border-radius: 5%;
+    margin-top: 5%;
   }
   .button{
     background-color: #C29A56;
@@ -151,7 +165,7 @@ body{
     color:black;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 16px;
     
   }
   .original-button {
@@ -161,21 +175,22 @@ body{
   line-height: 1;
   text-decoration: none;
   color: #000000;
-  font-size: 30px;
+  font-size: 16px;
   border-radius: 14px;
-  width: 20%;
-  height: 10%;
+  width: 15%;
+  height: 5%;
   font-weight: bold;
   transition: 0.3s;
   background-color: #c29a56;
   margin-left: 45%;
   margin-top: 5%;
+  padding: 1%;
 }
 
 .original-button:hover {
   box-shadow: 0 0 rgba(0, 0, 0, 0.7);
   border-bottom-width: 5px;
-  transform: translateY(5px);
+  transform: translateY(2px);
 }
 .original-button2 {
   display: flex;
@@ -184,7 +199,7 @@ body{
   line-height: 1;
   text-decoration: none;
   color: #000000;
-  font-size: 30px;
+  font-size: 16px;
   border-radius: 14px;
   width: 20%;
   height: 10%;
@@ -193,26 +208,119 @@ body{
   background-color: #c29a56;
   margin-left: 45%;
   margin-top: 5%;
+  margin-bottom: 3%;
+  padding: 1%;
 }
 
-.original-button2:hover {
-  box-shadow: 0 0 rgba(0, 0, 0, 0.7);
-  border-bottom-width: 5px;
-  transform: translateY(5px);
-}
 
     li{
         list-style: none;
     }
     .list-form{
-        background-color: #ebd8b7;
+        background-color: #e2d3b8;
     }
 
    .inline{
     display: inline;
-    padding-right: 10%;
-    font-size: 30px;
+    padding-right: 5%;
+    font-size: 16px;
+   } 
+   .inline2{
+    display: inline;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
    } 
    .cards{
     background-color:#FEFFFF;
    }
+   .star {
+    color: rgb(183, 0, 0);
+    font-weight: bold;
+  }
+  .form {
+    width: 100%;
+    height: 100%;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 40px -10px #000;
+    padding-left: 10%;
+    padding-top: 2%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    position: center;
+  }
+  #input {
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.3s;
+    border-bottom: 2px solid #000000;
+    position: center;
+  }
+  #contacta{
+    padding-left: 35%;
+    padding-top:2%;  }
+  
+    .container {
+      width: 400px;
+      margin: auto;
+      padding-top: 5%;
+      padding-left: 5%;
+      padding-bottom: 5%;
+      padding-right: 5%;
+      border-radius: 11px;
+      box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+    }
+    
+    .login-title {
+      padding: 15px;
+      font-size: 22px;
+      font-weight: 600;
+      text-align: center;
+    }
+    
+    .login-form {
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 16px;
+    }
+    
+    .login-form label {
+      display: block;
+      margin-bottom: 8px;
+    }
+    
+    .login-form input {
+      width: 90%;
+      padding: 1.2rem;
+      border-radius: 9px;
+      border: none;
+      
+    }
+    
+    .btn--form {
+      background-color: #C29A56;
+      color: #ffffff;
+      align-self: end;
+      padding: 8px;
+    }
+    
+    .btn,
+    .btn-link,
+    .btn-visited {
+      display: inline-block;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 600;
+      border-radius: 9px;
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+      transition: all 0.3s;
+    }
