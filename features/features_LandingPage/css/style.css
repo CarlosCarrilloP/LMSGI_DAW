@@ -1,10 +1,11 @@
 body{
     padding: 0;
     margin: 0;
+    font-family: "Work Sans", sans-serif;
 }
 .projects {  display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 1.7fr 1.7fr 1.7fr 1fr 0.2fr;
+    grid-template-rows: 0.4fr 1.7fr 1.7fr 1.7fr 1fr 0.2fr;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -23,7 +24,8 @@ body{
   .nav-logo { grid-area: nav-logo;
 
     background-color: #FEFFFF;
-    padding-top: 6%;
+    padding-top: 4%;
+    padding-left: 3%;
     
  }
   .nav-center { grid-area: nav-center; 
@@ -34,43 +36,83 @@ body{
 
     background-color: #FEFFFF;
     padding-top: 6%;
+    color:black;
+    text-transform: uppercase;
+    font-weight: bold;
+    
     
      }
   
   .descripcion-right { grid-area: descripcion-right;
     background-color:#EDE0C9;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
 
 }
   
   .descripcion-left { grid-area: descripcion-left;
     background-color:#EDE0C9;
+    text-align: center;
+    padding-left: 7%;
+    font-size: 40px;
+
 }
   
   .card-1 { grid-area: card-1;
     background-color:#D3B98D;
+    text-align: center;
+    font-size: 40px;
+    margin: 7%;
+    padding: 2%;
+    padding-bottom: 8%;
+    border-radius: 5%;
+    box-shadow: 10px 2px 9px 8px rgba(0,0,0,0.44);
 
 }
   
   .card-2 { grid-area: card-2;
-    background-color:#D3B98D; }
+    background-color:#D3B98D;
+    text-align: center;
+    font-size: 40px;
+    margin: 7%;
+    padding: 2%;
+    padding-bottom: 17%;
+    border-radius: 5%;
+    box-shadow: 10px 2px 9px 8px rgba(0,0,0,0.44); }
   
   .card-3 { grid-area: card-3;
-    background-color:#D3B98D; }
+    background-color:#D3B98D;
+    text-align: center;
+    font-size: 40px;
+    margin: 7%;
+    padding: 2%;
+    padding-bottom: 17%;
+    border-radius: 5%;
+    box-shadow: 10px 2px 9px 8px rgba(0,0,0,0.44); }
   
   .datos1 { grid-area: datos1;
     background-color:#FEFFFF;
+    font-size: 30px;
+    text-align: center;
  }
   
   .datos2 { grid-area: datos2; 
     background-color:#FEFFFF;
+    font-size: 30px;
+    text-align: center;
 }
   
   .datos3 { grid-area: datos3;
     background-color:#FEFFFF;
+    font-size: 30px;
+    text-align: center;
 }
   
   .footer { grid-area: footer; 
     background-color:#EDE0C9;
+    font-size: 20px;
+    text-align: center;
 }
   
   
@@ -98,13 +140,66 @@ body{
   }
   .button{
     background-color: #C29A56;
+    margin-top: 5%;
+    padding: 1%;
+    border-radius: 0;
+    border-color: #C29A56;
+    box-shadow: none;
   }
   .inside-button{
     text-decoration: none;
     color:black;
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 50px;
+    
   }
+  .original-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  text-decoration: none;
+  color: #000000;
+  font-size: 30px;
+  border-radius: 14px;
+  width: 20%;
+  height: 10%;
+  font-weight: bold;
+  transition: 0.3s;
+  background-color: #c29a56;
+  margin-left: 45%;
+  margin-top: 5%;
+}
+
+.original-button:hover {
+  box-shadow: 0 0 rgba(0, 0, 0, 0.7);
+  border-bottom-width: 5px;
+  transform: translateY(5px);
+}
+.original-button2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  text-decoration: none;
+  color: #000000;
+  font-size: 30px;
+  border-radius: 14px;
+  width: 20%;
+  height: 10%;
+  font-weight: bold;
+  transition: 0.3s;
+  background-color: #c29a56;
+  margin-left: 45%;
+  margin-top: 5%;
+}
+
+.original-button2:hover {
+  box-shadow: 0 0 rgba(0, 0, 0, 0.7);
+  border-bottom-width: 5px;
+  transform: translateY(5px);
+}
 
     li{
         list-style: none;
