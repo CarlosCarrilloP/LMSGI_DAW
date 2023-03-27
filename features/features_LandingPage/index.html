@@ -7,6 +7,7 @@
     <title>TrenzaTress</title>
     <link rel="stylesheet" href="css/style.css" />
     <script src="javascript/script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </head>
   <body>
     <div class="projects">
@@ -18,7 +19,8 @@
         />
       </div>
       <div class="nav-center"></div>
-      <div class="nav-right">
+      <button class="button-mobile"> <img src="media/img/menu.png" alt="boton movil"> </button>
+      <div class="nav-right" id="nav-right">
         <ul>
           <li class="inline"> <a class="inline2" href="productos.html">Productos</a></li>
           <li class="inline"> <a class="inline2" href="#sobrenosotros">Sobre Nosotros</a></li>
@@ -111,8 +113,8 @@
               />
             </div>
     
-            <button class="btn btn--form" type="submit" value="Log in">
-              Log in
+            <button class="btn btn--form" type="button" value="Log in" onclick="showAlert()">
+              Enviar
             </button>
           </form>
         </div>
